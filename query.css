@@ -1,0 +1,56 @@
+@media screen and (min-width: 1440px) {
+  main {
+    display: flex;
+  }
+  main section, main section:nth-child(1) {
+    height: 100vh;
+  }
+  main section:nth-child(1) {
+    background-image: url("./images/bg-main-desktop.png");
+    width: 30vw;
+  }
+  main section:nth-child(1) div, main section:nth-child(1) div:nth-child(2), main section:nth-child(1) div:nth-child(1) {
+    width: 25vw;
+    height: 27vh;
+    background-size: cover;
+  }
+  main section:nth-child(1) div:nth-child(1) {
+    left: 10vw;
+  }
+  main section:nth-child(1) div:nth-child(1) article:nth-child(3) {
+    font-size: 1.4rem;
+  }
+  main section:nth-child(1) div:nth-child(2) {
+    bottom: 20vh;
+    top: unset;
+    right: unset;
+    left: 15vw;
+  }
+  main section:nth-child(1) div:nth-child(2) span {
+    top: 13vh;
+    right: 6vh;
+  }
+  main section:nth-child(2) {
+    width: 65vw;
+  }
+  main section:nth-child(2) form {
+    width: 40vw;
+    margin-left: 30%;
+    margin-top: 20%;
+  }
+  main section:nth-child(2) form input {
+    padding: 0 1vw;
+  }
+  main section:nth-child(2) form fieldset div:nth-child(1) {
+    gap: 7vw;
+  }
+  main section:nth-child(2) form fieldset div:nth-child(2) {
+    gap: 1vw;
+  }
+  main section:nth-child(2) form fieldset div:nth-child(2) input:nth-child(1), main section:nth-child(2) form fieldset div:nth-child(2) input:nth-child(2) {
+    width: 7vw;
+  }
+  main section:nth-child(2) form fieldset div:nth-child(2) input:nth-child(3) {
+    width: 14vw;
+  }
+}/*# sourceMappingURL=query.css.map */
