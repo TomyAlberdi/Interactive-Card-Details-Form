@@ -105,6 +105,7 @@
   background-color: hsl(278deg, 68%, 11%);
   color: white;
   height: 8vh;
+  cursor: pointer;
 }
 * main section:nth-child(2) form label {
   font-size: 0.9rem;
