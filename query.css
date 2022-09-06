@@ -53,4 +53,13 @@
   main section:nth-child(2) form fieldset div:nth-child(2) input:nth-child(3) {
     width: 14vw;
   }
+  main section:nth-child(2) #completed {
+    display: flex;
+    justify-content: center;
+    margin-left: 10vw;
+    margin-top: 25vh;
+  }
+  main section:nth-child(2) #completed button {
+    width: 30vw;
+  }
 }/*# sourceMappingURL=query.css.map */

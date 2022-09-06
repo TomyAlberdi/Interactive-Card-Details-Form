@@ -62,6 +62,15 @@
                         }
                     }
                 }
+                #completed {
+                    display: flex;
+                    justify-content: center;
+                    margin-left: 10vw;
+                    margin-top: 25vh;
+                    button {
+                        width: 30vw;
+                    }
+                }
             }
         }
     }
