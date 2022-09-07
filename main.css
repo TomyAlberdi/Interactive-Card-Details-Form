@@ -107,6 +107,12 @@
   height: 8vh;
   cursor: pointer;
 }
+* main section:nth-child(2) form input:focus {
+  border: 1px solid linear-gradient(hsl(249deg, 99%, 64%) to hsl(278deg, 94%, 30%));
+}
+* main section:nth-child(2) form input:invalid {
+  border: 1px solid red;
+}
 * main section:nth-child(2) form label {
   font-size: 0.9rem;
 }

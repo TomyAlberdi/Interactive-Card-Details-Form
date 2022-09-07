@@ -39,7 +39,9 @@ let completed = () => {
 }
 
 let renderContinue = () => {
+
     contDiv.style.display = "none"
     form.reset()
     form.style.display = "flex"
+
 }
