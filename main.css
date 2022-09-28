@@ -80,6 +80,7 @@
 }
 * main section:nth-child(2) form {
   margin-top: 10vh;
+  margin-bottom: -10vh;
   display: flex;
   flex-direction: column;
   padding: 0 5vw;
@@ -90,7 +91,6 @@
   border: 1px solid lightgray;
   border-radius: 10px;
   padding: 0 5vw;
-  margin-bottom: 2vh;
 }
 * main section:nth-child(2) form input::-moz-placeholder {
   color: lightgray;
@@ -110,11 +110,16 @@
 * main section:nth-child(2) form input:focus {
   border: 1px solid linear-gradient(hsl(249deg, 99%, 64%) to hsl(278deg, 94%, 30%));
 }
-* main section:nth-child(2) form input:invalid {
-  border: 1px solid red;
+* main section:nth-child(2) form input::-webkit-outer-spin-button, * main section:nth-child(2) form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+* main section:nth-child(2) form input[type=number] {
+  -moz-appearance: textfield;
 }
 * main section:nth-child(2) form label {
   font-size: 0.9rem;
+  margin-top: 2vh;
 }
 * main section:nth-child(2) form fieldset {
   border: none;

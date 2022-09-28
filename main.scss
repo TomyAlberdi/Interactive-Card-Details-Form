@@ -87,6 +87,7 @@
             &:nth-child(2) {
                 form {
                     margin-top: 10vh;
+                    margin-bottom: -10vh;
                     display: flex;
                     flex-direction: column;
                     padding: 0 5vw;
@@ -96,7 +97,6 @@
                         border: 1px solid lightgray;
                         border-radius: 10px;
                         padding: 0 5vw;
-                        margin-bottom: 2vh;
                         &::placeholder {
                             color: lightgray;
                         }
@@ -109,12 +109,17 @@
                         &:focus {
                             border: 1px solid linear-gradient(hsl(249, 99%, 64%) to hsl(278, 94%, 30%));
                         }
-                        &:invalid {
-                            border: 1px solid red;
+                        &::-webkit-outer-spin-button,&::-webkit-inner-spin-button {
+                          -webkit-appearance: none;
+                          margin: 0;
+                        }
+                        &[type="number"] {
+                            -moz-appearance: textfield;
                         }
                     }
                     label {
                         font-size: 0.9rem;
+                        margin-top: 2vh;
                     }
                     fieldset {
                         border: none;
