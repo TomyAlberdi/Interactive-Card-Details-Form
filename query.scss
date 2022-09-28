@@ -4,7 +4,7 @@
         display: flex;
         section {
             height: 100vh;
-            &:nth-child(1) {
+            &:nth-child(1) { // Data Display Cards
                 @extend section;
                 background-image: url('./images/bg-main-desktop.png');
                 width: 30vw;
@@ -12,7 +12,7 @@
                     width: 25vw;
                     height: 27vh;
                     background-size: cover;
-                    &:nth-child(1) {
+                    &:nth-child(1) { // Front Card
                         @extend div;
                         left: 10vw;
                         article {
@@ -21,7 +21,7 @@
                             }
                         }
                     }
-                    &:nth-child(2) {
+                    &:nth-child(2) { // Back Card
                         @extend div;
                         bottom: 20vh;
                         top: unset;
@@ -34,7 +34,7 @@
                     }
                 }
             }
-            &:nth-child(2) {
+            &:nth-child(2) { // Form
                 width: 65vw;
                 form {
                     width: 40vw;
@@ -45,10 +45,10 @@
                     }
                     fieldset {
                         div {
-                            &:nth-child(1) {
+                            &:nth-child(1) { // Date and CVC Labels
                                 gap: 7vw;
                             }
-                            &:nth-child(2) {
+                            &:nth-child(2) { // Month, Year and CVC Inputs
                                 gap: 1vw;
                                 input {
                                     &:nth-child(1), &:nth-child(2) {
@@ -62,7 +62,7 @@
                         }
                     }
                 }
-                #completed {
+                #completed { // Completed State
                     display: flex;
                     justify-content: center;
                     margin-left: 10vw;
