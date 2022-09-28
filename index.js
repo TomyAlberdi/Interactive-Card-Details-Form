@@ -41,6 +41,10 @@ let formValidation = () => {
     errors.forEach(e => {
         e.remove()
     });
+    let inputs = document.querySelectorAll('input')
+    inputs.forEach(e => {
+        e.classList.remove('notValid')
+    })
 
     let numberDiv = document.querySelector('.numberDiv')
 
@@ -59,6 +63,7 @@ let formValidation = () => {
         if (!result) {
             let error = errorCard("Wrong format.")
             inputName.after(error)
+            inputName.classList.add("notValid")
             pass = false
         }
     }
@@ -70,6 +75,7 @@ let formValidation = () => {
         if (!result) {
             let error = errorCard("Invalid month.")
             numberDiv.after(error)
+            inputMM.classList.add("notValid")
             pass = false
         }
     }
@@ -77,10 +83,11 @@ let formValidation = () => {
 
     let yyValidation = () => {
         let val = inputYY.value
-        let result = /^[2-9][2-9]$/.test(val);
+        let result = /^[0-9][0-9]$/.test(val);
         if (!result) {
             let error = errorCard("Invalid year.")
             numberDiv.after(error)
+            inputYY.classList.add("notValid")
             pass = false
         }
     }
@@ -92,6 +99,7 @@ let formValidation = () => {
         if (!result) {
             let error = errorCard("Invalid CVC.")
             numberDiv.after(error)
+            inputCvc.classList.add("notValid")
             pass = false
         }
     }
