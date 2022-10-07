@@ -113,10 +113,13 @@
 }
 * main section:nth-child(2) form input::-webkit-outer-spin-button, * main section:nth-child(2) form input::-webkit-inner-spin-button {
   -webkit-appearance: none;
+  appearance: none;
   margin: 0;
 }
 * main section:nth-child(2) form input[type=number] {
   -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 * main section:nth-child(2) form input.notValid {
   border: 1px solid hsl(0deg, 100%, 66%);

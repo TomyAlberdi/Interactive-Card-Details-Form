@@ -112,10 +112,12 @@
                         }
                         &::-webkit-outer-spin-button,&::-webkit-inner-spin-button {
                           -webkit-appearance: none;
+                          appearance: none;
                           margin: 0;
                         }
                         &[type="number"] {
                             -moz-appearance: textfield;
+                            appearance: textfield;
                         }
                         &.notValid {
                             border: 1px solid hsl(0, 100%, 66%);
